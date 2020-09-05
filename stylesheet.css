@@ -12,7 +12,7 @@ overflow: hidden;
 
 }
 
-.test{
+.p5Canvas{
   height: 100%;
   overscroll-behavior: none;
   position: fixed;
