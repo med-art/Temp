@@ -2,6 +2,6 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-function draw(){
+function touchMoved(){
   ellipse(mouseX,mouseY,100,100);
 }
