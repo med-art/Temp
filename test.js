@@ -1,10 +1,15 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  frameRate(24);
+
+  canvas.addEventListener('touchmove', moved);
+  canvas.addEventListener('mousemove', moved);
+  canvas.addEventListener('touchstart', touchdown);
+  canvas.addEventListener('mousedown', touchdown);
+  canvas.addEventListener('touchend', touchstop);
+  canvas.addEventListener('touchleave', touchstop);
+  canvas.addEventListener('mouseup', touchstop);
 }
 
-function touchMoved(){
-  background(100);
+function moved(){
   ellipse(mouseX,mouseY,100,100);
-  text(frameRate(),10,10);
 }
