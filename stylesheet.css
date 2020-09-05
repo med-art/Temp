@@ -9,7 +9,11 @@ user-select:none;
 background-color: #7cce6c;
 overflow: hidden;
 
-height: 100%;
-overscroll-behavior: none;
-position: fixed;
+
+}
+
+.test{
+  height: 100%;
+  overscroll-behavior: none;
+  position: fixed;
 }
