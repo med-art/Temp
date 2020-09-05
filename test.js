@@ -3,13 +3,16 @@ function setup() {
 
   canvas.addEventListener('touchmove', moved);
   canvas.addEventListener('mousemove', moved);
-  // canvas.addEventListener('touchstart', touchdown);
-  // canvas.addEventListener('mousedown', touchdown);
-  // canvas.addEventListener('touchend', touchstop);
-  // canvas.addEventListener('touchleave', touchstop);
-  // canvas.addEventListener('mouseup', touchstop);
+  canvas.addEventListener('touchstart', moved);
+  canvas.addEventListener('mousedown', moved);
+  canvas.addEventListener('touchend', moved);
+  canvas.addEventListener('touchleave', moved);
+  canvas.addEventListener('mouseup', moved);
 }
 
-function moved(){
-  ellipse(mouseX,mouseY,100,100);
+function moved(e){
+
+  clientX = e.touches[0].clientX;
+clientY = e.touches[0].clientY;
+  ellipse(clientX,clientY,100,100);
 }
