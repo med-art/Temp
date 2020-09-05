@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(1000, 1000);
 }
 
 function touchMoved(){
