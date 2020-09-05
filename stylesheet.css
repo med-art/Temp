@@ -10,6 +10,6 @@ background-color: #7cce6c;
 overflow: hidden;
 
 height: 100%;
-//overscroll-behavior: none;
+overscroll-behavior: none;
 position: fixed;
 }
