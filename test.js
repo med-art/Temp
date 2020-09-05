@@ -4,5 +4,7 @@ function setup() {
 }
 
 function touchMoved(){
+  background(100);
   ellipse(mouseX,mouseY,100,100);
+  text(frameRate(),10,10);
 }
