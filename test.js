@@ -8,11 +8,14 @@ function setup() {
   canvas.addEventListener('touchend', moved);
   canvas.addEventListener('touchleave', moved);
   canvas.addEventListener('mouseup', moved);
+
+  strokeWeight(10);
+  stroke(250);
 }
 
 function moved(e){
 
   clientX = e.touches[0].clientX;
 clientY = e.touches[0].clientY;
-  ellipse(clientX,clientY,100,100);
+  point(clientX,clientY);
 }
