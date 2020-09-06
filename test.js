@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(width, height);
 
   canvas.addEventListener('touchmove', moved);
   canvas.addEventListener('mousemove', moved);
