@@ -7,4 +7,6 @@ function setup() {
 
 function touchMoved(){
   ellipse(mouseX,mouseY,100,100);
+
+  return false;
 }
