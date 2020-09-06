@@ -5,6 +5,6 @@ function setup() {
   fill(0);
 }
 
-function draw(){
+function touchMoved(){
   ellipse(mouseX,mouseY,100,100);
 }
