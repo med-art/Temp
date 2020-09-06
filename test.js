@@ -1,9 +1,11 @@
+
+
 function setup() {
-  createCanvas(width, height);
+  createCanvas(windowWidth, windowHeight);
   strokeWeight(10);
   stroke(250);
 }
 
-function touchmoved(){
+function draw(){
   point(mouseX, mouseY);
 }
